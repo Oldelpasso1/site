@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mon blog — style inspiré</title>
+  <!-- Polices : approximation (Merriweather pour le texte, Source Code Pro pour le code) -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Template simple pour GitHub Pages inspiré de djalil.chafai.net" />
+  <style>
+    /* Reset minimal */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      font-family: 'Merriweather', Georgia, serif;
+      margin:0;
+      color:#111;
+      background:#fff;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Page wrapper */
+    .wrap{
+      max-width:820px; /* similaire à la colonne centrale */
+      margin:48px auto;
+      padding:0 18px;
+    }
+
+    /* Header / site title */
+    header{
+      margin-bottom:28px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .site-title{
+      font-weight:700;
+      font-size:28px;
+      letter-spacing:-0.01em;
+      margin:0;
+    }
+    nav{
+      display:flex;
+      gap:14px;
+      font-size:14px;
+    }
+    nav a{color:#0b3a66; text-decoration:none}
+
+    /* Post list / article */
+    article{margin-top:20px}
+    article h2{
+      font-size:22px;
+      margin:0 0 6px 0;
+      font-weight:700;
+    }
+    .meta{
+      color:#666;
+      font-size:13px;
+      margin-bottom:14px;
+    }
+
+    p{margin:0 0 1em 0}
+
+    /* Images: centered, caption-like */
+    .figure{display:block; margin:18px 0; text-align:center}
+    .figure img{max-width:100%; height:auto; display:block; margin:0 auto}
+    .figure .caption{font-size:13px; color:#555; margin-top:6px}
+
+    /* Code block */
+    pre,code{font-family: 'Source Code Pro', monospace; font-size:14px}
+    pre{background:#f7f7f7; padding:12px; overflow:auto; border-left:3px solid #e0e0e0}
+
+    /* Narrow reading measure and comfortable line length */
+    article .content{font-size:18px; max-width:680px}
+
+    /* Footer */
+    footer{margin:48px 0 80px 0; color:#666; font-size:14px}
+
+    /* Make it nicer on small screens */
+    @media (max-width:640px){
+      .wrap{margin:28px 18px}
+      .site-title{font-size:22px}
+      article .content{font-size:17px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="site-title">Libres pensées — Mon blog</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">LPMO</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2>Beta/Gamma/Normal and Jacobi/Laguerre/Hermite</h2>
+        <div class="meta">Publié le 21 décembre 2025</div>
+
+        <figure class="figure">
+          <img src="https://djalil.chafai.net/blog/images/anonymus.jpg" alt="Statue" />
+          <div class="caption">Statue of Anonymus in the City Park of Budapest — Miklós Ligeti, 1903.</div>
+        </figure>
+
+        <div class="content">
+          <p>Exemple de paragraphe. Le réglage de la typographie (Merriweather, taille 18px, interligne 1.7) fournit une lecture confortable et rappelle le style dépouillé du site de référence.</p>
+
+          <pre><code>/* Exemple de bloc de code */
+function hello(){
+  console.log('Bonjour');
+}
+</code></pre>
+
+          <p>Vous pouvez remplacer les polices, les couleurs, et la largeur max pour coller encore plus précisément au modèle que vous souhaitez reproduire.</p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      © Votre nom — Template inspiré de djalil.chafai.net
+    </footer>
+  </div>
+</body>
+</html>
